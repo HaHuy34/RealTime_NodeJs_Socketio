@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Chat Demo</title>
+    <script src="jquery.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="layout.css" />
+    <script src="xuly.js"></script>
+    <!-- <script>
+      var socket = io("http://localhost:3000");
+      $(document).ready(function () {
+        $("#chatForm").hide();
+        $("#login-form").show();
+        $(
+          "#btnRegister".click(function () {
+            socket.emit("Client-send-Username", $("#userName").val());
+            console.log(btnRegister);
+          })
+        );
+      });
+    </script> -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div id="loginForm">
+          <input type="text" id="userName" placeholder="Enter your name...." />
+          <input type="button" id="btnRegister" value="Register" />
+        </div>
+
+        <div id="chatForm">
+          <div class="left">
+            <h3 id="userNameOnline">User Online</h3>
+            <div id="users-onl"></div>
+            
+          </div>
+          <div class="right">
+            <div class="top-account">
+              Hello <span id="currentUser"></span>
+              <input type="button" id="btn-log-out" value="Log Out" />
+            </div>
+            <div class="listMess"></div>
+            <div class="sent-mess">
+              <input
+                type="text"
+                id="contentMess"
+                placeholder="Type a message...."
+              />
+              <input type="button" id="sentMess" value="Sent" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(254, 254, 254);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#loginForm {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#userName {
+  width: 75%;
+}
+
+#chatForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 30%;
+  border: 1px solid #a2a1a1;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px 0;
+  height: fit-content;
+}
+
+input {
+  padding: 5px;
+  outline: none;
+}
+
+#btnRegister {
+  cursor: pointer;
+}
+
+#userNameOnline {
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.box-user {
+  text-align: center;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.right {
+  margin: 10px 0 0 10px;
+  background-color: beige;
+  width: 70%;
+  height: 550px;
+  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.top-account {
+  width: 100%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#btn-log-out {
+  padding: 2px 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+#btn-log-out:hover {
+  background-color: green;
+  color: #fff;
+}
+
+#currentUser {
+  font-weight: 600;
+  margin: 0 10px 0 5px;
+}
+
+.sent-mess {
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+
+#contentMess {
+  width: 90%;
+}
+
+#sentMess {
+  width: 9%;
+  cursor: pointer;
+}
+
+.listMess {
+  background-color: rgb(209, 209, 189);
+  border-radius: 5px;
+  overflow: auto;
+  height: 85%;
+  width: 100%;
+}
